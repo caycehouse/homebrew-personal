@@ -4,7 +4,7 @@ cask "airpods-sound-quality-fixer" do
 
   url "https://github.com/milgra/airpodssoundqualityfixer/releases/download/#{version}/AirPods.Sound.Quality.Fixer#{version}.zip"
   name "AirPods Sound Quality Fixer"
-  desc "AirPods Sound Quality Fixer And Battery Life Enhancer For MacOS"
+  desc "Fixes sound quality drops when using AirPods."
   homepage "https://github.com/milgra/airpodssoundqualityfixer"
 
   app "AirPods Sound Quality Fixer.app"
