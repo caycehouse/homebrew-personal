@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: Set up Homebrew
         id: set-up-homebrew
-        uses: Homebrew/actions/setup-homebrew@a7128e96205796abc6bf4aece272a81ad6d80d2c # master
+        uses: Homebrew/actions/setup-homebrew@86fe8bfcc0e2130aa1679d6bf1ff0323eecd8191 # master
 
       - name: Cache Homebrew Bundler RubyGems
         id: cache
