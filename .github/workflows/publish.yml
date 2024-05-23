@@ -9,10 +9,10 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Set up Homebrew
-        uses: Homebrew/actions/setup-homebrew@c6d0c565c2138ab03badaeab495a83d348fb7b5c # master
+        uses: Homebrew/actions/setup-homebrew@1b4aed560ad961d8e719859d3fa2ea1de2ed2afa # master
 
       - name: Set up git
-        uses: Homebrew/actions/git-user-config@c6d0c565c2138ab03badaeab495a83d348fb7b5c # master
+        uses: Homebrew/actions/git-user-config@1b4aed560ad961d8e719859d3fa2ea1de2ed2afa # master
 
       - name: Pull bottles
         env:
@@ -23,7 +23,7 @@ jobs:
         run: brew pr-pull --debug --tap=$GITHUB_REPOSITORY $PULL_REQUEST
 
       - name: Push commits
-        uses: Homebrew/actions/git-try-push@c6d0c565c2138ab03badaeab495a83d348fb7b5c # master
+        uses: Homebrew/actions/git-try-push@1b4aed560ad961d8e719859d3fa2ea1de2ed2afa # master
         with:
           token: ${{ github.token }}
           branch: main
